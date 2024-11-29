@@ -13,6 +13,7 @@ import ProductPage from './components/pages/ProductPage';
 function AppRouter({ dispatch }) {
   let location = useLocation();
   useEffect(() => {
+    console.log(setRouteAction());
     dispatch(setRouteAction(location.pathname));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
